@@ -1,0 +1,16 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: rgb(177, 172, 172);
+}
+.container{
+  height:50vh;
+  /* width: 100vh; */
+  background-image: url('./assets/image.jpg');
+  background-size: cover;
+}
