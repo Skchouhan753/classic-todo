@@ -1,6 +1,1 @@
-//DO NOT modify this file
-export const ADD = "ADD";
-export const REDUCE = "REDUCE";
-
-
-
+export const TOGGLE_DARK_MODE = 'TOGGLE_DARK_MODE';

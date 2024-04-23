@@ -1,9 +1,20 @@
-// reducers/index.js
-import { combineReducers } from 'redux';
-import todoReducer from './todoReducer';
+// reducers.js
+import { TOGGLE_DARK_MODE } from './actionTypes';
 
-const rootReducer = combineReducers({
-  todos: todoReducer,
-});
+const initialState = {
+  isDarkMode: false,
+};
 
-export default rootReducer;
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case TOGGLE_DARK_MODE:
+      return {
+        ...state,
+        isDarkMode: !state.isDarkMode,
+      };
+    default:
+      return state;
+  }
+};
+
+export default reducer;
